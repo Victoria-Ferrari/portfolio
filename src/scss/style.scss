@@ -1,0 +1,51 @@
+@import 'fonts';
+@import 'reset';
+@import 'colors';
+@import 'menu';
+
+.landing{
+    .title-mobile{
+        h1{
+            writing-mode: vertical-rl;
+            transform: rotate(180deg); 
+        }
+        height: 80vh;
+        margin-bottom: 30px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        span{
+            color: $white;
+            font-size: 5rem;   
+            display: block;
+            &.translate{
+                transform: translateY(80px);
+            }
+        }
+        #scroll-down{
+            position: absolute;
+            display: block;
+            bottom: 0;
+            right: 0;
+    }
+    }   
+}
+/* marquee + data e ora */
+
+.datas{
+    .marquee, .day{
+        background-color: white;
+        height: 75px;
+    }
+    .marquee{
+        border-bottom: 1px solid black;
+    }
+}
+
+@media (min-width: 768px) {
+    .datas{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}

@@ -1,0 +1,50 @@
+@import 'colors';
+@font-face {
+    font-family: 'quantico';
+    src: url(../static/quantico/Quantico-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'quantico';
+    src: url(../static/quantico/Quantico-Regular.ttf);
+    font-weight: 400;
+}
+body{
+    width: 100vw;
+}
+a{text-decoration: none;}
+h1, span{
+    font-family: 'quantico', sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 5rem;
+    margin: 0;
+}
+
+/* menu li customisation */
+@mixin primary-li{
+    font-family: 'quantico', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0;
+    color: $yellow;
+    list-style: none;
+}
+@mixin secondary-li{
+    color: $white;
+    font-size: 1.8rem;
+    // text-transform: uppercase;
+    font-weight: normal;
+}
+
+.menu{
+    li{
+        @include primary-li;
+    }
+    .category-works-menu{
+          li{
+            @include secondary-li;
+          }
+      }
+}
