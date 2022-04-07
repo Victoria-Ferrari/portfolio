@@ -15,7 +15,7 @@
   \*********************/
 /***/ (() => {
 
-eval("/* toggle menu */\r\nconst toggler = document.querySelector(\".menu__toggler\")\r\nconst menu = document.querySelector(\".menu\")\r\nconst arrow = document.querySelector(\".arrow\")\r\n\r\ntoggler.addEventListener(\"click\", () => {\r\n  toggler.classList.toggle(\"active\")\r\n  menu.classList.toggle(\"active\")\r\n  arrow.classList.toggle(\"reverse\")\r\n})\r\n\n\n//# sourceURL=webpack://portfolio/./src/main.js?");
+eval("/* toggle menu */\r\nconst toggler = document.querySelector(\".menu__toggler\")\r\nconst menu = document.querySelector(\".menu\")\r\nconst arrow = document.querySelector(\".arrow\")\r\n\r\ntoggler.addEventListener(\"click\", () => {\r\n  toggler.classList.toggle(\"active\")\r\n  menu.classList.toggle(\"active\")\r\n  arrow.classList.toggle(\"reverse\")\r\n})\r\n\r\n/* CLOCK */\r\n\r\nfunction currentTime() {\r\n  let date = new Date()\r\n  let hh = date.getHours()\r\n  let mm = date.getMinutes()\r\n  let ss = date.getSeconds()\r\n  // let session = \"AM\"\r\n\r\n  // if (hh > 12) {\r\n  //   session = \"PM\"\r\n  // }\r\n\r\n  hh = hh < 10 ? \"0\" + hh : hh\r\n  mm = mm < 10 ? \"0\" + mm : mm\r\n  ss = ss < 10 ? \"0\" + ss : ss\r\n\r\n  let time = hh + \":\" + mm + \":\" + ss\r\n\r\n  document.getElementById(\"clock\").innerText = time\r\n  let t = setTimeout(function () {\r\n    currentTime()\r\n  }, 1000)\r\n}\r\n\r\ncurrentTime()\r\n\r\n/* current date */\r\n\r\nlet today = new Date()\r\ntoday =\r\n  today.getFullYear() +\r\n  \"-\" +\r\n  (today.getMonth(\"long\") + 1) +\r\n  \"-\" +\r\n  today.getDate()\r\n\r\ndocument.getElementById(\"day\").innerText = today\r\nconsole.log(today)\r\n\n\n//# sourceURL=webpack://portfolio/./src/main.js?");
 
 /***/ })
 
