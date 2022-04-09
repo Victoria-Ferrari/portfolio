@@ -1,4 +1,4 @@
-/* toggle menu */
+/* TOGGLE MENU ANIMATION */
 const toggler = document.querySelector(".menu__toggler")
 const menu = document.querySelector(".menu")
 const arrow = document.querySelector(".arrow")
@@ -9,8 +9,7 @@ toggler.addEventListener("click", () => {
   arrow.classList.toggle("reverse")
 })
 
-/* CLOCK */
-
+/* CLOCK current hour */
 function currentTime() {
   let date = new Date()
   let hh = date.getHours()
@@ -20,7 +19,7 @@ function currentTime() {
 
   // if (hh > 12) {
   //   session = "PM"
-  // }
+  // } NON LI VOGLIO ma forse domani si
 
   hh = hh < 10 ? "0" + hh : hh
   mm = mm < 10 ? "0" + mm : mm
@@ -36,15 +35,15 @@ function currentTime() {
 
 currentTime()
 
-/* current date */
-
+/* CURRENT DAY */
 let today = new Date()
 today =
   today.getFullYear() +
-  "-" +
-  (today.getMonth("long") + 1) +
-  "-" +
+  " " +
+  today.toLocaleString("en-US", { month: "long" }) +
+  " " +
   today.getDate()
-
 document.getElementById("day").innerText = today
 console.log(today)
+
+/* drag and drop */

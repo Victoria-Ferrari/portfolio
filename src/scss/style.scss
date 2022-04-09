@@ -17,7 +17,7 @@
         justify-content: center;
         span{
             color: $white;
-            font-size: 5rem;   
+            font-size: 6rem;   
             display: block;
             &.translate{
                 transform: translateY(80px);
@@ -27,7 +27,7 @@
             position: absolute;
             display: block;
             bottom: 30px;
-            right: 0 ;
+            right: -15px ;
     }
     }  
     .datas{
@@ -59,10 +59,14 @@
 /* marquee + data e ora */
 
 
-
+/* desktop */
 @media (min-width: 768px) {
     
     .landing{
+        .main-landing{
+            // display: flex;
+            // align-items: center;
+        }
         .title-mobile{
             height: 90vh;
             align-items: center;
@@ -87,23 +91,51 @@
             display: grid;
             grid-template-columns: 2fr 1fr;
         }
+
         .line-ball{
             display: flex;
+            justify-content: center;
+            align-items: center;
             align-self: flex-end;
-            margin-bottom: 90px;
-            .ball{
-            background-color:$viola;
-            height: 150px;
-            width: 150px;
-            border-radius: 100px;
-            }
+            position: relative;
+            margin-left: 200px;
+            margin-bottom: 150px;
             .line{
                 height: 2px;
-                width: 400px;
+                width: 600px;
                 z-index: 6;
-                margin-left: -30px;
                 background-color: $yellow;
             }
+            .ball{
+                position: absolute;
+            }
+            input[type=range] {
+                cursor: pointer;
+                width: 750px;
+                -webkit-appearance: none;
+                &::-webkit-slider-runnable-track{
+                    -webkit-appearance: none;
+                }
+            }
+            input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                cursor: ew-resize;
+              }
+              input[type=range] {
+                background: transparent;
+                -webkit-appearance: none;
+              }
+              input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                background: $viola;
+                border-radius: 100%;
+                height: 150px;
+                width: 150px;
+              }
+              input[type=range]::-webkit-slider-runnable-track {
+                -webkit-appearance: none;
+                background: transparent;
+              }
         }
     }
 }
