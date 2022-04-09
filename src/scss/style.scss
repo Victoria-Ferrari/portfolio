@@ -56,6 +56,79 @@
         display: none;
     }
 }
+
+/* about me homepage */
+.about-me-home{
+    flex-direction: column;
+    .titolo-about{
+        padding: 30px;
+        width: max-content;
+        flex-direction: column;
+        h2{
+            margin: 0px;
+        }
+        h3{
+            align-self: flex-end;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .about-me-text{
+        grid-template-columns: 1fr 4fr;
+    .about-home-p{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: $white;
+        padding: 30px 0;
+    } p{
+        color: black;
+        width: 70%;
+        margin-right: 30px;
+    }
+    }
+}
+.menu-sphere{
+    background-color: $viola;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    .sphera{
+        width: 165px;
+        height: 165px;
+        border-radius: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        margin: 2px;
+        h3{
+            color: $yellow;
+            font-family: 'quantico', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+    }
+    .sphera-3{
+        margin-top: -20px;
+    }
+}
+.solution-home {
+    background-color: $white;
+    padding: 30px;
+    p, h2{
+        color: black;
+    }
+}
+.offerta{
+    background-color: $viola;
+    h2{
+        @include h2-verde;
+        padding: 30px;
+    }
+}
+
 /* marquee + data e ora */
 
 
@@ -63,10 +136,10 @@
 @media (min-width: 768px) {
     
     .landing{
-        .main-landing{
-            // display: flex;
-            // align-items: center;
-        }
+        // .main-landing{
+        //     // display: flex;
+        //     // align-items: center;
+        // }
         .title-mobile{
             height: 90vh;
             align-items: center;

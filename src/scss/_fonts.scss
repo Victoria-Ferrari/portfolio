@@ -37,11 +37,20 @@ h1, span{
     line-height: 5.5rem;
     margin: 0;
 }
-h2{
+@mixin h2{
     font-family: 'monserrat-medium', sans-serif;
     font-weight: 400;
     font-size: 2.25rem;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+@mixin h2-verde{
+    @include h2;
+    color: $verde;
+}
+h2{
+    @include h2;
 }
 h3{
     font-size: 1.5rem;
