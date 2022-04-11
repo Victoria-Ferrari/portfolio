@@ -119,6 +119,7 @@
     padding: 30px;
     p, h2{
         color: black;
+        font-family: 'serif';
     }
 }
 .offerta{
@@ -209,6 +210,50 @@
                 -webkit-appearance: none;
                 background: transparent;
               }
+        }
+    }
+    .about-me-home{
+        flex-direction: column;
+        height: 100%;
+        .titolo-about{
+            padding: 60px 30px;
+        }
+        .about-me-text{
+            height: 100%;
+            display: flex;
+            .about-home-p{
+                justify-content: center;
+                align-items: flex-start;
+            }       
+        }
+    }
+    /* sezione 2 */
+    .sezione2-desktop{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .menu-sphere{
+        background-color: $viola;
+        padding: 30px 0;
+        .sphera{
+            align-self: flex-end;
+            // justify-content: stretch;
+            width: 300px;
+            height: 300px;
+            margin: 0 2px;
+            h3{
+                margin: 40px 0;
+            }
+        }
+        .sphera-3{
+            margin-top: 0px;
+        }
+    }
+    .solution-home {
+        h2{
+            font-size: 4.5rem;
+            padding: 200px 0 50px 0;
         }
     }
 }
