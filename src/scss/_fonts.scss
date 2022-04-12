@@ -52,6 +52,12 @@ h1, span{
 h2{
     @include h2;
 }
+@mixin h2monserrat{
+    display: block;
+    font-size: 2.25rem;
+    line-height: 2.2rem;
+    font-family: 'montserrat-medium', sans-serif;
+}
 h3{
     font-size: 1.5rem;
     line-height: 1.5rem;
@@ -77,12 +83,13 @@ h3{
 }
 
 .menu{
-    li{
+    li a{
         @include primary-li;
     }
     .category-works-menu{
-          li{
+          a, .all-categories a{
             @include secondary-li;
+            list-style: none
           }
       }
 }
@@ -93,5 +100,30 @@ h3{
     .landing .title-mobile h1 span{
         font-size: 6rem;
         line-height: 6rem;
+    }
+    
+}
+@mixin h2monserratDesk{
+    @include h2monserrat();
+    display: block;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+}
+
+/* skills resume */
+@mixin skill{
+    padding-bottom: 30px;
+    span{
+        line-height: 2rem;
+        color: $verde;
+        font-size: 1.5rem;
+        font-family: 'montserrat-medium', sans-serif;
+    }
+    p{
+        color: $white;
+        // font-size: 1.12rem;
+    }
+    .title-skill{
+        margin-left: 30px;
     }
 }

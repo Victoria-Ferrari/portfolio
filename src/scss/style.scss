@@ -108,6 +108,7 @@
             font-size: 24px;
             font-weight: 400;
             word-wrap: break-word;
+            padding-top: 20px;
         }
     }
     .sphera-3{
@@ -121,12 +122,29 @@
         color: black;
         font-family: 'serif';
     }
+    h2 span{
+        @include h2monserrat;
+    }
 }
 .offerta{
     background-color: $viola;
     h2{
         @include h2-verde;
-        padding: 30px;
+        padding: 60px 30px;
+    }
+    .skills{
+        background-color: black;
+        padding: 60px 30px;
+        .skill{
+            @include skill;
+            .marker{
+                background-color: $verde;
+                width: 18px;
+                height: 18px;
+                border-radius: 30px;
+                margin-right: 20px;
+            }
+        }
     }
 }
 
@@ -135,12 +153,32 @@
 
 /* desktop */
 @media (min-width: 768px) {
-    
+    .menu{
+        li a{
+            font-size: 8rem;
+            &:hover{
+                -webkit-text-stroke: 2px $yellow;
+                color: $viola;
+            }
+        }
+        .works-menu{
+            display: block;
+            .rotate{
+                transform: rotate(-90deg);
+                max-width: max-content;
+                img{
+                    margin-top: 0;
+                    transform: scaleX(-1);
+                }
+            }
+        }
+        .category-works-menu{
+            .category{
+                display: flex;
+              }
+          }
+    }
     .landing{
-        // .main-landing{
-        //     // display: flex;
-        //     // align-items: center;
-        // }
         .title-mobile{
             height: 90vh;
             align-items: center;
@@ -252,8 +290,41 @@
     }
     .solution-home {
         h2{
-            font-size: 4.5rem;
             padding: 200px 0 50px 0;
+            span{
+                @include h2monserratDesk;
+            }
+        }
+        .descrizione{margin: 0 25%;
+            padding-bottom: 20px;
+            h2 span{
+                line-height: 1rem;
+            }
+        }
+    }
+    .offerta{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        h2{
+            @include h2-verde;
+            padding: 60px 30px;
+            font-size: 3rem;
+        }
+        .skills ul{
+            padding: 60px 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            grid-template-rows: 1fr 1fr;
+            .skill{
+                @include skill;
+                .marker{
+                    background-color: $verde;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 100%;
+                }
+            }
         }
     }
 }

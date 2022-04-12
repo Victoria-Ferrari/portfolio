@@ -76,9 +76,15 @@
 }
   
   @media only screen and (max-width: 600px) {
+    .menu{
+      li{
+          @include primary-li;
+      }
   }
+  }
+  /* arrow down-up transition */
   &.active {
-    bottom: 0;
+    // bottom: 0;
     .arrow svg{
       transform: rotate(180deg);
     }
