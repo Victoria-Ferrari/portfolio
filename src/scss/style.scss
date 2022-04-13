@@ -2,6 +2,7 @@
 @import 'reset';
 @import 'colors';
 @import 'menu';
+@import 'works';
 
 .landing{
     .title-mobile{
@@ -28,7 +29,7 @@
             display: block;
             bottom: 30px;
             right: -15px ;
-    }
+        }
     }  
     .datas{
         height: 20vh;
@@ -93,7 +94,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
     .sphera{
         width: 165px;
         height: 165px;
@@ -194,7 +194,7 @@
             }
             #scroll-down{
                 left: -55px;
-                bottom: 170px;
+                bottom: 144px;
                 transform: rotate(90deg);
             }
         }    
@@ -276,7 +276,6 @@
         padding: 30px 0;
         .sphera{
             align-self: flex-end;
-            // justify-content: stretch;
             width: 300px;
             height: 300px;
             margin: 0 2px;

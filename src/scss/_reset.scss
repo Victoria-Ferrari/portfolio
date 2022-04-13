@@ -6,6 +6,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: $white;
 }
 ul{
     margin: 0;
@@ -31,6 +32,9 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.col{
+    flex-direction: column;
 }
 /* dimensions */
 .full-vh{

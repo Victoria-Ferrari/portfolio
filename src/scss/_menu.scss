@@ -73,6 +73,7 @@
     }
  &.active {
   bottom: 0;
+  position: fixed;  overflow-y: hidden;
 }
   
   @media only screen and (max-width: 600px) {
