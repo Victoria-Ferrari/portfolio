@@ -1,9 +1,9 @@
-// span{
-//     font-size: 5rem;
-//     font-family: 'quantico';
-//     color: $viola;
-//     -webkit-text-stroke: 1px $yellow;
-// }
+.main-works span{
+    font-size: 5rem;
+    font-family: 'quantico';
+    color: $viola;
+    -webkit-text-stroke: 1px $yellow;
+}
 .works-filter{
     overflow-y: hidden;
 }   
@@ -25,6 +25,7 @@
     border-bottom: 2px solid #4c3e3e63;
     padding-top: 15px;
     display: flex;
+    align-items: baseline;
     span{
         @include secondary-li;
         -webkit-text-stroke: $white;
@@ -46,9 +47,11 @@
         }
     }
 }
-
+.works{
+    padding: 0 30px;
+}
 .card{
-    padding: 50px 0;
+    padding-top: 50px;
     h3{
         color: $white;
         font-family: 'quantico-regular', sans-serif;

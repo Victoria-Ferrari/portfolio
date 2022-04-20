@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -78,7 +79,8 @@
       </div>
       <div class="line-ball df start">
         <div class="line df center"><p>drag it</p></div>
-        <div class="ball"> <input type="range" value="1"></div>
+        <div class="ball"> <input id="bigbubble" type="range" value="0" min="0" max="100" step="1"></div>
+        <output id="output"></output>
       </div>
     </div>
     <div class="datas">
@@ -113,7 +115,7 @@
     </div>
   </div>
   <div class="solution-home">
-    <h2><span>need</span><span>a customized</span><span>solution?</span></h2>
+    <h2 data-aos="fade-up"><span>need</span><span>a customized</span><span>solution?</span></h2>
     <!-- <h2>NEED A CUSTOMIZED SOLUTION?</h2> -->
     <div class="descrizione"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet</p></div>
   </div>
@@ -152,6 +154,10 @@
 
 <footer>
 </footer>
-<script src="main.js"></script>
+<script src="main.js">
+
+
+</script>
+
 </body>
 </html>

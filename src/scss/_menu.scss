@@ -2,7 +2,7 @@
  * MENU BUTTON
  */
  .menu__toggler {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   z-index: 999;
@@ -81,6 +81,9 @@
       li{
           @include primary-li;
       }
+      .category-works{
+        display: none;
+      }
   }
   }
   /* arrow down-up transition */
@@ -98,3 +101,4 @@
  .reverse{
   transform: rotateX(180deg);
 }
+

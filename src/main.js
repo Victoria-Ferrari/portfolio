@@ -1,3 +1,13 @@
+import AOS from "aos"
+import "../node_modules/aos/dist/aos"
+// AOS.init()
+
+AOS.init({
+  delay: 200,
+  duration: 1200,
+  once: false,
+})
+
 /* TOGGLE MENU ANIMATION */
 const toggler = document.querySelector(".menu__toggler")
 const menu = document.querySelector(".menu")
@@ -46,4 +56,17 @@ today =
 document.getElementById("day").innerText = today
 console.log(today)
 
-/* drag and drop */
+/* baigBubble animation */
+
+let bigBubble = document.querySelector("#bigbubble")
+
+bigBubble.addEventListener("input", (e) => {
+  let newSize = scaleValue(e.target.value, [0, 100], [100, 250])
+  document.documentElement.style.setProperty("--ballSize", `${newSize}px`)
+})
+
+function scaleValue(value, from, to) {
+  var scale = (to[1] - to[0]) / (from[1] - from[0])
+  var capped = Math.min(from[1], Math.max(from[0], value)) - from[0]
+  return ~~(capped * scale + to[0])
+}
