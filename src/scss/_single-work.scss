@@ -1,0 +1,27 @@
+@media (min-width: 768px){
+    .main-single-work{
+        // padding: 40px 100px;
+        h2 {
+            padding: 100px 200px 0;
+            span{
+                padding: 20px 0;
+                display: block;
+                font-size: 144px;
+                color: $yellow;
+                font-family: 'quantico-regular', sans-serif;
+            }
+        }
+        .freccia-gialla{
+            height: 200px;
+            width: 200px;
+            background-color: $pinky;
+            border-radius: 100%;
+        }
+        .full-img{
+            img{
+                width: 100vw;
+                height: 100vh;
+            }   
+        }
+    }
+}
