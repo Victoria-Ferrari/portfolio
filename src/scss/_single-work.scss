@@ -1,27 +1,95 @@
-@media (min-width: 768px){
+// @media (min-width: 768px){
     .main-single-work{
-        // padding: 40px 100px;
         h2 {
-            padding: 100px 200px 0;
+            padding: 100px 220px 0;
             span{
-                padding: 20px 0;
+                font-family: 'quantico', sans-serif;
+                padding: 30px 0;
                 display: block;
                 font-size: 144px;
                 color: $yellow;
-                font-family: 'quantico-regular', sans-serif;
             }
         }
-        .freccia-gialla{
-            height: 200px;
-            width: 200px;
-            background-color: $pinky;
-            border-radius: 100%;
-        }
+
         .full-img{
-            img{
-                width: 100vw;
-                height: 100vh;
-            }   
+            position: relative;
+            .freccia-gialla{
+                height: 250px;
+                width: 250px;
+                background-color: $pinky;
+                border-radius: 100%;
+                position: absolute;
+                z-index: 99;
+                top: -140px;
+                left: 70px;
+            }
+        }
+        .descrizione-work{
+            position: relative;
+            background-color: $viola;
+            padding: 150px 100px;    
+            .dati{
+                width: 40vw;
+                .border-top{
+                    border-top: 1px solid $white;
+                    padding: 30px 0;
+                    span{
+                        font-family: 'montserrat', sans-serif;
+                        font-size: 13px;
+                        line-height: 0px;
+                        }
+                }
+                .border-bottom{
+                    border-bottom: 1px solid $white;
+                    padding-bottom: 80px;
+                    span{
+                        font-family: 'montserrat', sans-serif;
+                        font-size: 16px;
+                        line-height: 0px;
+                        }
+                }
+                .label{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .descrizione{
+                    padding-bottom: 18px;
+                    border-bottom: 1px solid $white;
+                    p{padding-bottom: 30px;}
+                    a.link-website{
+                        color: $yellow;
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            img.img-mobile{
+                position: absolute;
+                right: 15px;
+                top: 80%;
+                height: 278px;
+            }
+        }
+        .obiettivo{
+            width: 40vw;
+            padding:100px;
+            h2{
+                font-family: 'monserrat-medium', sans-serif;
+                font-weight: 400;
+                font-size: 2.25rem;
+                text-transform: lowercase;
+                border-bottom: 1px solid $white;
+                padding: 30px 0; 
+            }
+        }
+        .color-palette{
+            flex-direction: column;
+            h2{
+                padding-bottom: 30px;
+            }
+            padding-bottom: 100px;
+
         }
     }
-}
+// }
+
