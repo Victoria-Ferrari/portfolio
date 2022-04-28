@@ -1,0 +1,139 @@
+.contact{
+    
+    background-color: #E5E5E5;
+    .contact-main{
+        font-family: 'monserrat-medium', sans-serif;
+        color: black;
+        padding: 50px 30px 0 30px;
+        .informativa {
+            h2{
+                font-size: 48px;
+            }
+            p{
+                color: black;
+                font-family: 'monserrat-medium', sans-serif;
+            }
+        }
+        .input-name, .input-email, .input-message{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            margin: 40px 0;
+        }
+        input, textarea{
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+        #checkbox a{
+            color: blue;
+        }
+    }
+    .contact-exit{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 40px;
+        button.close{
+            cursor: pointer;
+            border-radius: 50px;
+            border: 3px solid $verde;
+            background-color: transparent;
+            width: 62px;
+            height: 139px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(-90deg);
+            a{
+                color: black;
+                writing-mode: vertical-lr;
+                font-family: 'quantico', sans-serif;
+                font-size: 24px;
+            }
+        }
+        .input{
+            // height: 439px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 62px;
+            input{
+                background-color: $yellow;
+                border: none;
+                border-radius: 50px;
+                padding: 17px 150px;
+                font-family: 'quantico', sans-serif;
+                font-size: 24px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .contact{
+        height: 100vh;
+    display: flex;
+    .contact-main{
+        width: 85vw;
+        padding: 100px;
+        .request{
+            padding: 10px 0;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            .informativa {
+                p{
+                    width: 50%;
+                }
+            }
+
+                span{
+                    font-family: 'monserrat-medium', sans-serif;
+                    font-size: 24px;
+                }
+            
+        }
+    }
+    .contact-exit{
+        background-color: black;
+        width: 15vw;
+        justify-content:space-around;
+        padding: 0;
+        button.close{
+            cursor: pointer;
+            border-radius: 50px;
+            border: 3px solid $verde;
+            color: $white;
+            background-color: transparent;
+            height: 62px;
+            width: 139px;
+            a{
+                transform: rotate(90deg);
+                font-family: 'quantico', sans-serif;
+                font-size: 24px;
+                color: $white;
+            }
+        }
+        .input{
+            height: 399px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 62px;
+            input{
+                // display: block;
+                background-color: $yellow;
+                // transform-origin: center;
+                // writing-mode: vertical-lr;
+                border: none;
+                border-radius: 50px;
+                width: 439px;
+                // height: 62px;
+                padding: 17px 190px;
+                font-family: 'quantico', sans-serif;
+                font-size: 24px;
+                line-height: 24px;
+                transform: rotate(90deg);
+            }
+        }
+    }
+}}

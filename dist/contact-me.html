@@ -8,17 +8,44 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css"></head>
 <body>
-    <main class="contact-main">
-        <img src="../static/lavori/logo.png" alt="logo VK - Victoria">
-        <section class="request">
-            <div class="informativa">
-                <h2>REQUEST A MEETING</h2>
-                <p>Describe your business goals and needs. Feel free to contact me.</p>
-                <p>feel free to contact me!</p>
-            </div>
-            <div class="messaggio">
-            </div>
-        </section>
+    
+    <main>
+        <div class="contact">
+        <div class="contact-main">
+            <img src="../static/lavori/logo.png" alt="logo VK - Victoria">
+            <section class="request">
+                <div class="informativa">
+                    <h2>REQUEST A MEETING</h2>
+                    <p>Describe your business goals and needs.</p>
+                    <p>feel free to contact me!</p>
+                </div>
+                <form method="POST" action="upload.php">
+                        <div class="input-name">
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                        </div>
+                        <div class="input-email">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                        </div>
+                        <div class="input-message">
+                            <label for="request">Write a message</label>
+                            <textarea type="text" id="request" name="request" placeholder=" " required></textarea>
+                        </div>
+                        <div id="checkbox"><input name="personalInformationCheck" id="personalInformationCheck"  type="checkbox" required><label for="personalInformationCheck">I have read the<a target="_blank" href="#"> privacy policy</a> and give my consent to the processing of personal data.</label>
+                        <br><br>
+
+                        </div>
+                </section>
+                </div>
+                    <div class="contact-exit">
+                        <button class="close"><a href="index.html">CLOSE</a></button>
+                        <div class="input">
+                            <input type="submit" value="send">
+                        </div>
+                    </div>
+                </form>
+    </div>
     </main>
 </body>
 </html>

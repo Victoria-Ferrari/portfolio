@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="upload.php">
+        <div class="user-box">
+            <input type="text" id="name" name="name" placeholder=" " required>
+            <label for="name">First name*</label>
+        </div>                                  
+        <div class="user-box">
+            <input type="text" id="lastname" name="lastname" placeholder=" " required>
+            <label for="lastname">Last name*</label>
+        </div>
+        <div class="user-box">
+            <input type="email" id="email" name="email" placeholder=" " required>
+            <label for="email">Email*</label>
+        </div>
+        <div class="user-box">
+            <textarea type="text" id="request" name="request" placeholder=" " required></textarea>
+            <label for="request">Write a message</label>
+        </div>
+
+        <div id="checkbox" style="margin-left:20px;"><input name="personalInformationCheck" id="personalInformationCheck"  type="checkbox" required><label for="personalInformationCheck">I have read the<a target="_blank" href="#"> privacy policy</a> and give my consent to the processing of personal data.</label>
+        <br><br>
+        </div>
+
+        <a href="#" class="button button-neon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <input type="submit" value="Send">
+        </a>
+    </form>
+</body>
+</html>
